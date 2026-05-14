@@ -1,0 +1,68 @@
+---
+title: "Connect Calendly, Google Calendar, or Outlook to Clara"
+sidebarTitle: "Calendar"
+description: "Link Clara SDR to Calendly, Google Calendar, or Outlook so qualified prospects can book meetings without ever leaving your website."
+---
+
+Once you connect a calendar, Clara handles the entire booking flow on your behalf. When a prospect qualifies, Clara presents available times, the prospect picks a slot, and they receive a calendar invite — all before leaving your website. Your AE gets the meeting on their calendar along with full lead context already synced to your CRM.
+
+## Supported calendars
+
+<CardGroup cols={3}>
+  <Card title="Calendly" icon="calendar-check">
+    Recommended for teams with complex routing and availability rules.
+  </Card>
+  <Card title="Google Calendar" icon="google">
+    Direct integration with Google Workspace accounts.
+  </Card>
+  <Card title="Outlook Calendar" icon="microsoft">
+    Direct integration with Microsoft 365 accounts.
+  </Card>
+</CardGroup>
+
+## How booking works
+
+1. Clara qualifies the prospect based on your configured criteria.
+2. Clara surfaces a scheduling interface directly in the conversation — the prospect never navigates away.
+3. The prospect selects a date and time from your team's live availability.
+4. Both the prospect and the assigned AE receive a calendar invite instantly.
+5. Meeting details sync to your CRM so the AE has full context when they join.
+
+## Connect your calendar
+
+<Steps>
+  <Step title="Open the integrations page">
+    In your Clara dashboard, navigate to **Integrations → Calendar**.
+  </Step>
+  <Step title="Select your calendar provider">
+    Click **Calendly**, **Google Calendar**, or **Outlook Calendar**.
+  </Step>
+  <Step title="Authorize the connection">
+    You are redirected to your calendar provider to grant Clara read access to availability and write access to create events. Sign in and confirm the permissions.
+  </Step>
+  <Step title="Configure routing rules">
+    After connecting, set up routing rules to control which AE receives each meeting. Route by territory, vertical, company size, or any combination of Clara's qualification fields.
+  </Step>
+  <Step title="Test a booking">
+    Use the **Test booking** button in the dashboard to simulate a prospect scheduling a meeting and confirm the invite appears on the correct calendar.
+  </Step>
+</Steps>
+
+<Tip>
+  Use Calendly if your team has complex availability rules, round-robin scheduling, or territory-based routing across many AEs. Calendly's routing logic integrates cleanly with Clara's qualification output and gives you the most flexibility.
+</Tip>
+
+## Routing rules
+
+Routing rules let you send qualified meetings to the right AE automatically. You can create rules based on:
+
+- **Territory** — route by country, region, or zip code
+- **Company size** — route enterprise vs. SMB leads to different AEs
+- **Product line** — route based on the product the prospect expressed interest in
+- **Vertical** — route by industry or segment
+
+You can connect multiple AE calendars and assign each one a priority order within a routing rule. If the top-priority AE has no availability, Clara moves to the next AE in the list.
+
+<Info>
+  Changes to routing rules take effect immediately. Meetings already booked are not affected by rule updates.
+</Info>

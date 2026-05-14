@@ -1,0 +1,72 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "name": "Clara SDR",
+  "theme": "luma",
+  "favicon": "https://media.brand.dev/3324fb38-554b-4898-8428-11e28d625ecc.svg",
+  "colors": {
+    "primary": "#567cf4",
+    "light": "#9683fc"
+  },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Get Started Free",
+      "href": "https://clarasdr.ai"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-it-works"
+            ]
+          },
+          {
+            "group": "Setup & Training",
+            "pages": [
+              "setup/create-your-sdr",
+              "setup/train-your-sdr",
+              "setup/launch"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/lead-qualification",
+              "features/product-demos",
+              "features/meeting-booking",
+              "features/multilingual"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/crm",
+              "integrations/calendar",
+              "integrations/communication"
+            ]
+          },
+          {
+            "group": "Plans & Security",
+            "pages": [
+              "plans",
+              "security"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

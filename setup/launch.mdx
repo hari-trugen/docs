@@ -1,0 +1,90 @@
+---
+title: "Launch Clara SDR on Your Website With a Script Tag"
+sidebarTitle: "Launch"
+description: "Embed Clara SDR on your website with a single script tag and go live in under 24 hours — no developer dependencies or RevOps setup required."
+---
+
+Once Clara is trained, deploying her to your website takes a single script tag and a copy-paste. No RevOps involvement, no complex integrations, and no waiting on a developer queue. Most teams go from trained to live in under an hour. Clara appears as a video widget that greets visitors automatically and starts qualifying them in real time.
+
+<Steps>
+  <Step title="Copy your embed script">
+    Go to **Dashboard → Your SDR → Embed**. You'll see your unique embed script with your SDR ID pre-filled. Click **Copy** to copy it to your clipboard.
+  </Step>
+
+  <Step title="Paste the script into your website">
+    Add the script to every page where you want Clara to appear, just before the closing `</body>` tag. The exact method depends on your platform:
+
+    <CodeGroup>
+
+    ```html HTML
+    <!-- Paste before the closing </body> tag -->
+    <script
+      src="https://cdn.clarasdr.ai/embed.js"
+      data-sdr-id="YOUR_SDR_ID"
+      async
+    ></script>
+    </body>
+    ```
+
+    ```php WordPress
+    // Option 1: Use a header/footer plugin (e.g., Insert Headers and Footers)
+    // Paste the script tag into the "Footer" field.
+
+    // Option 2: Add to your theme's functions.php
+    function clara_sdr_embed() {
+        echo '<script src="https://cdn.clarasdr.ai/embed.js" data-sdr-id="YOUR_SDR_ID" async></script>';
+    }
+    add_action( 'wp_footer', 'clara_sdr_embed' );
+    ```
+
+    ```html Webflow
+    <!-- In Webflow: go to Site Settings → Custom Code → Footer Code -->
+    <!-- Paste the script tag into the footer code field and publish your site -->
+    <script
+      src="https://cdn.clarasdr.ai/embed.js"
+      data-sdr-id="YOUR_SDR_ID"
+      async
+    ></script>
+    ```
+
+    </CodeGroup>
+
+    <Warning>
+      The script tag must load on the page before Clara can engage visitors. If you place it in the `<head>` or block it with a content security policy, Clara will not appear. Always add the script before the closing `</body>` tag and ensure your CSP allows scripts from `cdn.clarasdr.ai`.
+    </Warning>
+  </Step>
+
+  <Step title="Target specific pages (optional)">
+    By default, Clara appears on every page where the script is installed. If you want Clara on specific pages only — such as your homepage or a high-intent landing page — you have two options:
+
+    - **Selective install**: Add the script only to the pages you want Clara on, rather than site-wide.
+    - **Page targeting rules**: Use the **Targeting** settings in **Dashboard → Your SDR → Embed** to define URL patterns. Clara will only activate on pages that match your rules.
+
+    Targeted deployments are common for teams running paid campaigns who want Clara on specific landing pages without affecting the rest of their site.
+  </Step>
+
+  <Step title="Verify Clara is live">
+    After publishing your changes, open the page in a browser and wait a few seconds. Clara's video widget should appear and greet you automatically.
+
+    To run a test conversation without affecting your analytics, use **Preview Mode** in **Dashboard → Your SDR → Embed**. Preview Mode loads a sandboxed version of Clara you can interact with before your changes go live.
+  </Step>
+</Steps>
+
+<Note>
+  Enterprise customers can request self-hosted or dedicated deployment options, including private CDN hosting and isolated infrastructure. Contact your account team to discuss deployment requirements.
+</Note>
+
+## Enterprise deployment options
+
+If you're on an Enterprise plan, Clara supports deployment beyond the website widget.
+
+<CardGroup cols={2}>
+  <Card title="Zoom and Teams meetings" icon="video">
+    Clara can join video calls as a participant — useful for automating initial discovery calls or running product demos without a human rep on the line.
+  </Card>
+  <Card title="Slack and Teams messaging" icon="message">
+    Deploy Clara in your Slack or Microsoft Teams workspace to engage inbound leads who reach out through internal channels or partner portals.
+  </Card>
+</CardGroup>
+
+Contact your account team or [reach out to sales](https://clarasdr.ai) to enable these deployment options.

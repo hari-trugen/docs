@@ -1,0 +1,95 @@
+---
+title: "Automated Meeting Booking Into Your Sales Team's Calendar"
+sidebarTitle: "Meeting Booking"
+description: "Clara books qualified prospects directly into your sales team's calendar during the conversation — no follow-up email or waiting required."
+---
+
+When a prospect is qualified and ready to talk, Clara books the meeting immediately — while they're still engaged in the conversation. The prospect receives a calendar invite before they leave your website. Your AE sees a booked meeting in their calendar with full context attached. No follow-up email required, no 48-hour wait, no dropped leads.
+
+## How Clara triggers booking
+
+Clara monitors qualification signals and buying intent throughout the conversation. When a prospect meets your criteria and expresses interest in connecting with your team, Clara transitions naturally into scheduling. She offers available time slots inline, confirms the prospect's preference, and sends the invite — all within the same conversation window.
+
+The booking trigger is configurable. You can set it to fire automatically when qualification criteria are met, after a demo, or when the visitor explicitly asks to speak to someone.
+
+## Supported calendar integrations
+
+<CardGroup cols={3}>
+  <Card title="Calendly" icon="calendar-check">
+    Connect your Calendly account and Clara books directly into your configured event types. Routing rules, buffer times, and daily limits from Calendly are respected automatically.
+  </Card>
+  <Card title="Google Calendar" icon="google">
+    Clara reads real-time availability from Google Calendar and books meetings directly. Invites are sent from your connected Google account.
+  </Card>
+  <Card title="Outlook Calendar" icon="microsoft">
+    Clara connects to Outlook via Microsoft 365 and books meetings using your calendar's free/busy data. Works with both personal and organizational accounts.
+  </Card>
+</CardGroup>
+
+## What the prospect sees
+
+From the prospect's side, the experience is seamless:
+
+1. Clara proposes available time slots based on the AE's real-time calendar
+2. The prospect selects a slot within the conversation
+3. Clara confirms the booking and sends a calendar invite to the prospect's email immediately
+4. The prospect receives a confirmation with meeting details, the AE's name, and any pre-meeting instructions you've configured
+
+The prospect leaves your website with a confirmed meeting — not a promise of a follow-up.
+
+## What the AE sees
+
+Your AE receives:
+
+- A calendar event with the prospect's name and contact details
+- A full conversation summary from Clara — what was discussed, what the prospect said their pain points were, and what they expressed interest in seeing
+- The captured qualification data: role, company size, tech stack, buying intent, and timeline
+- Enriched firmographics synced from your CRM
+- Any notes Clara flagged as high-priority during the conversation
+
+The AE arrives at the meeting already knowing who the prospect is and what they care about. The first call becomes a continuation of a conversation, not a cold introduction.
+
+## Setting up meeting booking
+
+<Steps>
+  <Step title="Go to Calendar in Dashboard Integrations">
+    Navigate to **Dashboard → Integrations → Calendar**. You'll see the available calendar providers listed.
+  </Step>
+  <Step title="Connect your calendar">
+    Select your provider and authenticate. For Google Calendar and Outlook, you'll complete an OAuth flow. For Calendly, enter your Calendly API key and select the event types Clara should book into.
+
+    <Tip>
+      Connecting Calendly is the fastest option for most teams. If you already have Calendly configured with your routing logic, buffer times, and availability rules, Clara inherits all of that automatically — no duplicate setup required.
+    </Tip>
+  </Step>
+  <Step title="Set meeting duration and buffer time">
+    If you're using Google Calendar or Outlook directly, set your default meeting length and any buffer time between meetings. Calendly users can skip this — Clara reads your Calendly event type settings.
+  </Step>
+  <Step title="Configure booking trigger criteria">
+    In **Dashboard → SDR Settings → Meeting Booking**, define when Clara should offer to book. You can set this to trigger automatically after qualification is complete, after a demo, or only when the prospect asks.
+  </Step>
+  <Step title="Add a confirmation message">
+    Write the message Clara delivers after a meeting is booked — a brief summary of what the prospect can expect on the call, who they'll be meeting with, and any preparation they should do.
+  </Step>
+</Steps>
+
+## Routing meetings to the right AE
+
+Clara can route each booking to the correct AE based on your defined rules rather than always booking into a single calendar.
+
+<AccordionGroup>
+  <Accordion title="Territory-based routing">
+    Route by the prospect's company location. Assign geographic territories to individual AEs, and Clara books into the AE responsible for that region.
+  </Accordion>
+  <Accordion title="Company size routing">
+    Route enterprise prospects (above a certain employee count or revenue threshold) to your enterprise AEs, and SMB prospects to your commercial team.
+  </Accordion>
+  <Accordion title="Industry routing">
+    Assign specific verticals — fintech, healthcare, e-commerce — to AEs with relevant expertise. Clara detects the prospect's industry during qualification and routes accordingly.
+  </Accordion>
+  <Accordion title="Round-robin routing">
+    Distribute meetings evenly across multiple AEs on the same team. Useful for inbound queues where territory or industry routing doesn't apply.
+  </Accordion>
+</AccordionGroup>
+
+Configure routing rules in **Dashboard → SDR Settings → Meeting Routing**. Rules are evaluated in the order you set them, and Clara applies the first matching rule to each booking.

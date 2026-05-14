@@ -1,0 +1,84 @@
+---
+title: "Sync Clara SDR Leads to HubSpot, Salesforce, or Zoho"
+sidebarTitle: "CRM"
+description: "Connect Clara SDR to HubSpot, Salesforce, Zoho, or Brevo to sync leads, conversation summaries, and booked meetings automatically in real time."
+---
+
+Clara pushes lead data directly into your CRM during and after every conversation — no manual exports, no third-party middleware, and no delays. Your account executives see full context before they ever walk into a meeting.
+
+## Supported CRMs
+
+<CardGroup cols={2}>
+  <Card title="HubSpot" icon="h">
+    Native integration with two-way field mapping and timeline events.
+  </Card>
+  <Card title="Salesforce" icon="cloud">
+    Native integration with lead and opportunity record creation.
+  </Card>
+  <Card title="Zoho CRM" icon="database">
+    Native integration with lead capture and activity logging.
+  </Card>
+  <Card title="Brevo" icon="envelope">
+    Native integration with contact and deal sync.
+  </Card>
+</CardGroup>
+
+## What syncs
+
+Every time Clara qualifies a prospect or books a meeting, the following data writes to your CRM automatically:
+
+- **Conversation summary** — a concise recap of the conversation Clara had with the prospect
+- **Qualification fields** — role, company size, pain points, and intent score
+- **Firmographic enrichment** — industry, employee count, revenue range, and technology stack
+- **Booked meeting details** — date, time, AE assigned, and meeting link
+
+Data syncs in real time during and immediately after each conversation. Your AEs have everything they need before the meeting starts.
+
+## Connect your CRM
+
+<Tabs>
+  <Tab title="HubSpot">
+    <Steps>
+      <Step title="Open the integrations page">
+        In your Clara dashboard, navigate to **Integrations → CRM** and click **HubSpot**.
+      </Step>
+      <Step title="Authorize with OAuth">
+        You are redirected to HubSpot. Sign in and grant Clara permission to read and write contacts, deals, and activity.
+      </Step>
+      <Step title="Map your fields">
+        Back in the Clara dashboard, use the field mapping UI to match Clara's qualification fields (role, intent score, pain points, and so on) to your HubSpot custom properties. Unmapped fields are stored in a default Clara activity event.
+      </Step>
+      <Step title="Test the connection">
+        Click **Send test record** to confirm a sample lead appears in HubSpot before going live.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Salesforce">
+    <Steps>
+      <Step title="Open the integrations page">
+        In your Clara dashboard, navigate to **Integrations → CRM** and click **Salesforce**.
+      </Step>
+      <Step title="Authorize with OAuth">
+        You are redirected to Salesforce. Sign in with an account that has API access and grant Clara permission to create and update leads, contacts, and activities.
+      </Step>
+      <Step title="Map your fields">
+        Use the field mapping UI to match Clara's qualification output to your Salesforce lead and contact fields. Custom fields you have already created in Salesforce appear automatically in the mapping dropdown.
+      </Step>
+      <Step title="Test the connection">
+        Click **Send test record** to confirm a sample lead record appears in Salesforce before going live.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+<Info>
+  Field mapping is optional. If you skip it, Clara creates a contact and attaches a full conversation summary as a note. You can return to configure field mapping at any time from **Integrations → CRM**.
+</Info>
+
+## How routing works
+
+Clara creates or updates CRM records based on the prospect's email address. If a contact already exists, Clara appends the new conversation summary and updates qualification fields rather than creating a duplicate. If no matching record is found, Clara creates a new lead or contact depending on your CRM's standard object model.
+
+<Note>
+  **Enterprise customers:** If you use a CRM not listed above — including homegrown or legacy systems — Clara offers custom CRM integrations with dedicated data pipeline configuration. Contact your account manager or [reach out to sales](https://clarasdr.ai) to scope a custom integration.
+</Note>

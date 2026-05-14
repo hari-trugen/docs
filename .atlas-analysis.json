@@ -1,0 +1,85 @@
+{
+  "projectType": "saas",
+  "projectName": "Clara SDR",
+  "projectDescription": "Clara is an AI Sales Development Representative that engages website visitors through face-to-face video, qualifies leads, runs personalized product demos, and books meetings 24/7 — without human SDRs.",
+  "theme": "luma",
+  "primaryColor": "#567cf4",
+  "lightColor": "#9683fc",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "how-it-works"
+            ]
+          },
+          {
+            "group": "Setup & Training",
+            "pages": [
+              "setup/create-your-sdr",
+              "setup/train-your-sdr",
+              "setup/launch"
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              "features/lead-qualification",
+              "features/product-demos",
+              "features/meeting-booking",
+              "features/multilingual"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/crm",
+              "integrations/calendar",
+              "integrations/communication"
+            ]
+          },
+          {
+            "group": "Plans & Security",
+            "pages": [
+              "plans",
+              "security"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "faq"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Face-to-face video AI engagement with website visitors",
+    "Real-time lead qualification through natural conversation",
+    "Live product demos with screen sharing and browser control",
+    "Automated meeting booking directly into sales team calendars",
+    "CRM sync (HubSpot, Salesforce, Zoho) with full conversation context",
+    "24/7 availability across all time zones and major languages",
+    "Personalized product walkthroughs adapted to visitor industry and role",
+    "Objection handling using custom sales playbooks",
+    "SOC 2 Type II, GDPR, HIPAA, and ISO 27001 certified",
+    "Free plan with no credit card required; live on website in hours"
+  ],
+  "publicApiSurface": [
+    "Website embed script (deploy Clara via script tag)",
+    "CRM integrations: HubSpot, Salesforce, Zoho, Brevo",
+    "Calendar integrations: Calendly, Google Calendar, Outlook",
+    "Communication integrations: Slack, Microsoft Teams",
+    "Custom avatar creation and training on product knowledge base",
+    "Meeting booking and calendar sync",
+    "Buyer conversation analytics and pipeline reporting"
+  ]
+}

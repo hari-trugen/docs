@@ -1,0 +1,104 @@
+---
+title: "Automatic Lead Qualification Through AI Conversation"
+sidebarTitle: "Lead Qualification"
+description: "Clara qualifies website visitors through natural conversation — capturing role, company size, pain points, and buying intent without forms."
+---
+
+Clara replaces static lead capture forms with real conversation. Instead of asking visitors to fill out fields, Clara opens a natural dialogue — asking the right questions at the right moment based on which page the visitor is on and how they arrived. The result is a richer, warmer lead that your AEs can act on immediately.
+
+## How Clara initiates qualification
+
+Clara doesn't use a generic opening. She tailors her first message to the visitor's context — the page they're viewing, the source they came from (paid ad, organic search, direct), and any available firmographic signals. A visitor landing on your pricing page gets a different opening than someone browsing your integration docs.
+
+<CardGroup cols={2}>
+  <Card title="Page-aware context" icon="file-magnifying-glass">
+    Clara reads the current page URL and adjusts her opening question to match where the visitor is in the buyer journey.
+  </Card>
+  <Card title="Arrival source signals" icon="arrow-pointer">
+    Traffic from a LinkedIn campaign triggers different qualification flows than organic search traffic.
+  </Card>
+  <Card title="Behavioral cues" icon="eye">
+    Time on page, scroll depth, and return visits influence how Clara paces the conversation.
+  </Card>
+  <Card title="CRM match detection" icon="database">
+    If the visitor's company is already in your CRM, Clara uses that context to skip redundant questions.
+  </Card>
+</CardGroup>
+
+## What Clara captures
+
+Clara gathers the data your AEs need — without the visitor ever seeing a form.
+
+<AccordionGroup>
+  <Accordion title="Role and title">
+    Clara asks naturally — "What does your day-to-day look like?" or "Are you the one evaluating tools like this?" — and maps the response to a job function and seniority level.
+  </Accordion>
+  <Accordion title="Company size">
+    Clara asks about team size or current headcount as part of a natural exchange, then cross-references with enrichment data to validate and fill gaps.
+  </Accordion>
+  <Accordion title="Tech stack">
+    When relevant, Clara asks which tools the visitor's team currently uses. This surfaces integration fit and competitive context before the AE conversation.
+  </Accordion>
+  <Accordion title="Pain points">
+    Clara listens for the problem the visitor is trying to solve and records the specific language they use — not a checkbox, but the actual words.
+  </Accordion>
+  <Accordion title="Buying intent">
+    Clara asks about timeline, budget, and whether the visitor is evaluating alternatives. This scores intent in real time and determines whether to escalate immediately.
+  </Accordion>
+</AccordionGroup>
+
+## CRM enrichment
+
+Clara automatically fills in firmographic data you don't need to ask for. When a visitor engages, Clara runs enrichment in the background — pulling company size, industry, revenue range, and location from your connected data sources. This means your AEs receive leads that are already populated with context, not just a name and email.
+
+<Note>
+  CRM enrichment runs automatically when you connect a supported CRM. See [CRM integrations](/integrations/crm) to configure your connection.
+</Note>
+
+## How qualified and unqualified leads are handled
+
+Not every visitor is a fit. Clara handles both outcomes gracefully.
+
+<Tabs>
+  <Tab title="Qualified leads">
+    When a visitor meets your qualification criteria, Clara moves the conversation toward the next step — a product demo, a meeting booking, or a direct handoff to an AE. The lead is created in your CRM with the full conversation summary, captured data, and enrichment attached.
+  </Tab>
+  <Tab title="Unqualified leads">
+    When a visitor doesn't meet your criteria — wrong company size, no buying intent, student researcher — Clara wraps the conversation politely, may offer a resource or trial link, and logs the session without creating a qualified lead record. Your AEs don't see noise.
+  </Tab>
+</Tabs>
+
+## The AE handoff
+
+When Clara passes a lead to your sales team, the AE receives:
+
+- Full conversation transcript
+- Captured data fields (role, company size, tech stack, pain points, buying intent)
+- Enriched firmographics from CRM
+- Lead score and qualification status
+- Suggested next-step context
+
+The AE doesn't need to cold-research the prospect. They arrive at the first meeting already knowing who the person is and what they care about.
+
+## Configuring your qualification criteria
+
+Set up your criteria in **Dashboard → SDR Settings → Qualification**.
+
+<Steps>
+  <Step title="Define your ideal customer profile">
+    Set the company size range, industries, and geographies that represent your best-fit customers. Clara uses these parameters to score each visitor.
+  </Step>
+  <Step title="Set role and seniority filters">
+    Specify which job functions and seniority levels Clara should prioritize — for example, VP-level and above in engineering or revenue roles.
+  </Step>
+  <Step title="Configure intent thresholds">
+    Choose the minimum buying intent score required before Clara escalates a lead. Lower thresholds pass more volume; higher thresholds pass fewer, warmer leads.
+  </Step>
+  <Step title="Map disqualification conditions">
+    Define the signals that identify a poor fit — for example, solo freelancers, students, or visitors from regions you don't serve. Clara handles these gracefully without wasting AE time.
+  </Step>
+</Steps>
+
+<Tip>
+  The more specific your qualification criteria, the better Clara filters leads. Vague criteria produce higher volume but lower signal. Tight criteria produce fewer leads that are significantly more likely to convert.
+</Tip>
